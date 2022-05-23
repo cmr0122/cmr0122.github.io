@@ -93,19 +93,19 @@
 
 
 
-<meta name="description" content="js学习初识JavaScriptJavaScript javascript是一种运行在客户端的脚本语言 脚本语言：不需要编译，运行过程中由js解释器（js引擎）逐行来进行解释并执行  浏览器执行JavaScript 渲染引擎：用来解析HTML和CSS，俗称内核，比如chrome浏览器的blink,老版本的webkit JS引擎：也称为JS解释器。用来读取网页中的JavaScript代码，对其处理后">
+<meta name="description" content="js学习初识JavaScriptJavaScript javascript是一种运行在客户端的脚本语言 脚本语言：不需要编译，运行过程中由js解释器（js引擎）逐行来进行解释并执行">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JS文档">
 <meta property="og:url" content="http://yoursite.com/2022/05/23/JS文档/index.html">
 <meta property="og:site_name" content="糖茶小柚">
-<meta property="og:description" content="js学习初识JavaScriptJavaScript javascript是一种运行在客户端的脚本语言 脚本语言：不需要编译，运行过程中由js解释器（js引擎）逐行来进行解释并执行  浏览器执行JavaScript 渲染引擎：用来解析HTML和CSS，俗称内核，比如chrome浏览器的blink,老版本的webkit JS引擎：也称为JS解释器。用来读取网页中的JavaScript代码，对其处理后">
+<meta property="og:description" content="js学习初识JavaScriptJavaScript javascript是一种运行在客户端的脚本语言 脚本语言：不需要编译，运行过程中由js解释器（js引擎）逐行来进行解释并执行">
 <meta property="og:image" content="http://yoursite.com/2022/05/23/JS文档/C:/Users/你不知道/Documents/hexo备用/js学习/变量命名规则.jpg">
 <meta property="og:image" content="http://yoursite.com/2022/05/23/JS文档/C:/Users/你不知道/Documents/hexo备用/js学习/优先级.jpg">
 <meta property="og:image" content="http://yoursite.com/2022/05/23/JS文档/image/js学习/1650189724824.png">
-<meta property="og:updated_time" content="2022-05-23T13:11:34.708Z">
+<meta property="og:updated_time" content="2022-05-23T15:44:22.160Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JS文档">
-<meta name="twitter:description" content="js学习初识JavaScriptJavaScript javascript是一种运行在客户端的脚本语言 脚本语言：不需要编译，运行过程中由js解释器（js引擎）逐行来进行解释并执行  浏览器执行JavaScript 渲染引擎：用来解析HTML和CSS，俗称内核，比如chrome浏览器的blink,老版本的webkit JS引擎：也称为JS解释器。用来读取网页中的JavaScript代码，对其处理后">
+<meta name="twitter:description" content="js学习初识JavaScriptJavaScript javascript是一种运行在客户端的脚本语言 脚本语言：不需要编译，运行过程中由js解释器（js引擎）逐行来进行解释并执行">
 <meta name="twitter:image" content="http://yoursite.com/2022/05/23/JS文档/C:/Users/你不知道/Documents/hexo备用/js学习/变量命名规则.jpg">
 
 
@@ -327,6 +327,7 @@
 <li>javascript是一种运行在客户端的脚本语言</li>
 <li>脚本语言：不需要编译，运行过程中由js解释器（js引擎）逐行来进行解释并执行</li>
 </ul>
+<a id="more"></a>
 <h3 id="浏览器执行JavaScript"><a href="#浏览器执行JavaScript" class="headerlink" title="浏览器执行JavaScript"></a>浏览器执行JavaScript</h3><ul>
 <li>渲染引擎：用来解析HTML和CSS，俗称内核，比如chrome浏览器的blink,老版本的webkit</li>
 <li>JS引擎：也称为JS解释器。用来读取网页中的JavaScript代码，对其处理后运行，比如chrome中的v8</li>
@@ -537,7 +538,7 @@
 <li>对象: 成为垃圾对象(没有任何引用)==&gt;垃圾回收器回收</li>
 </ul>
 <blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&gt; <span class="keyword">var</span> a = <span class="number">3</span></div><div class="line">&gt; <span class="keyword">var</span> obj = &#123;<span class="attr">name</span>:<span class="string">"liming"</span>&#125;</div><div class="line">&gt; obj = <span class="literal">undefined</span> ||<span class="literal">null</span>  <span class="comment">//此时,obj没有被释放,但是之前声明的`&#123;name:"liming"&#125;`由于没有人指向它,会在后面你某个时刻被垃圾回收器回收</span></div><div class="line">&gt; </div><div class="line">&gt; <span class="function"><span class="keyword">function</span> <span class="title">fn</span> (<span class="params"></span>) </span>&#123; <span class="keyword">var</span> b = &#123;&#125;&#125;</div><div class="line">&gt; fn() <span class="comment">// b是自动释放, b所指向的对象是在后面的某个时刻由垃圾回收器回收</span></div><div class="line">&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&gt; <span class="keyword">var</span> a = <span class="number">3</span></div><div class="line">&gt; <span class="keyword">var</span> obj = &#123;<span class="attr">name</span>:<span class="string">"liming"</span>&#125;</div><div class="line">&gt; obj = <span class="literal">undefined</span> ||<span class="literal">null</span>  <span class="comment">//此时,obj没有被释放,但是之前声明的`&#123;name:"liming"&#125;`由于没有人指向它,会在后面你某个时刻被垃圾回收器回收</span></div><div class="line">&gt;</div><div class="line">&gt; <span class="function"><span class="keyword">function</span> <span class="title">fn</span> (<span class="params"></span>) </span>&#123; <span class="keyword">var</span> b = &#123;&#125;&#125;</div><div class="line">&gt; fn() <span class="comment">// b是自动释放, b所指向的对象是在后面的某个时刻由垃圾回收器回收</span></div><div class="line">&gt;</div></pre></td></tr></table></figure>
 </blockquote>
 <h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h2><h3 id="递增-运算符"><a href="#递增-运算符" class="headerlink" title="递增 运算符"></a>递增 运算符</h3><p>前置递增和后置递增如果单独使用，效果一样</p>
 <p>前置递增：先自加1，后返回值</p>
