@@ -93,16 +93,16 @@
 
 
 
-<meta name="description" content="吴邪开馆必起尸，我开电脑必有bug,不管怎么说，总算有了雏形，待今后再慢慢改善吧，或许会再讲讲我建博客的心酸史，目前，我先要去休息会~~~">
+<meta name="description" content="JS常用数组方法总结   方法名 描述 是否改变原数组 返回内容 使用环境     array.slice(begin，end) 截取数组 不会 新数组 浅拷贝数组，index截取数组   array.map(function callback(currentValue[, index[, array]]) 对数组进行操作 不会 返回通过callback函数操作后的新数组 深拷贝数组，   arr">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello">
-<meta property="og:url" content="http://yoursite.com/2017/07/10/Hello/index.html">
+<meta property="og:title" content="JS常用数组方法总结">
+<meta property="og:url" content="http://yoursite.com/2022/05/26/JS常用数组方法总结/index.html">
 <meta property="og:site_name" content="糖茶小柚">
-<meta property="og:description" content="吴邪开馆必起尸，我开电脑必有bug,不管怎么说，总算有了雏形，待今后再慢慢改善吧，或许会再讲讲我建博客的心酸史，目前，我先要去休息会~~~">
-<meta property="og:updated_time" content="2017-07-10T08:42:11.158Z">
+<meta property="og:description" content="JS常用数组方法总结   方法名 描述 是否改变原数组 返回内容 使用环境     array.slice(begin，end) 截取数组 不会 新数组 浅拷贝数组，index截取数组   array.map(function callback(currentValue[, index[, array]]) 对数组进行操作 不会 返回通过callback函数操作后的新数组 深拷贝数组，   arr">
+<meta property="og:updated_time" content="2022-05-27T02:58:13.182Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello">
-<meta name="twitter:description" content="吴邪开馆必起尸，我开电脑必有bug,不管怎么说，总算有了雏形，待今后再慢慢改善吧，或许会再讲讲我建博客的心酸史，目前，我先要去休息会~~~">
+<meta name="twitter:title" content="JS常用数组方法总结">
+<meta name="twitter:description" content="JS常用数组方法总结   方法名 描述 是否改变原数组 返回内容 使用环境     array.slice(begin，end) 截取数组 不会 新数组 浅拷贝数组，index截取数组   array.map(function callback(currentValue[, index[, array]]) 对数组进行操作 不会 返回通过callback函数操作后的新数组 深拷贝数组，   arr">
 
 
 
@@ -130,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/07/10/Hello/"/>
+  <link rel="canonical" href="http://yoursite.com/2022/05/26/JS常用数组方法总结/"/>
 
 
 
 
 
-  <title>Hello | 糖茶小柚</title>
+  <title>JS常用数组方法总结 | 糖茶小柚</title>
   
 
 
@@ -255,7 +255,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/10/Hello/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2022/05/26/JS常用数组方法总结/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="cacute">
@@ -272,7 +272,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello</h1>
+          <h1 class="post-title" itemprop="name headline">JS常用数组方法总结</h1>
         
 
         <div class="post-meta">
@@ -284,8 +284,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-10T12:15:24+08:00">
-                2017-07-10
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-05-26T15:57:37+08:00">
+                2022-05-26
               </time>
             
 
@@ -319,7 +319,96 @@
       
 
       
-        <p>吴邪开馆必起尸，我开电脑必有bug,不管怎么说，总算有了雏形，待今后再慢慢改善吧，或许会再讲讲我建博客的心酸史，目前，我先要去休息会~~~</p>
+        <h1 id="JS常用数组方法总结"><a href="#JS常用数组方法总结" class="headerlink" title="JS常用数组方法总结"></a>JS常用数组方法总结</h1><table>
+<thead>
+<tr>
+<th style="text-align:center">方法名</th>
+<th>描述</th>
+<th style="text-align:center">是否改变原数组</th>
+<th>返回内容</th>
+<th>使用环境</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>array.slice(begin，end)</code></td>
+<td>截取数组</td>
+<td style="text-align:center">不会</td>
+<td>新数组</td>
+<td>浅拷贝数组，index截取数组</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>array.map(function callback(currentValue[, index[, array]])</code></td>
+<td>对数组进行操作</td>
+<td style="text-align:center">不会</td>
+<td>返回通过callback函数操作后的新数组</td>
+<td>深拷贝数组，</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>array.concat(valuel[, value2[, ...[, valueN]]])</code></td>
+<td>复制，合并数组</td>
+<td style="text-align:center">不会</td>
+<td>返回一个新数组</td>
+<td>浅拷贝数组，合并数组</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>[...array]</code></td>
+<td>拆分操作符</td>
+<td style="text-align:center">不会</td>
+<td>返回一个新数组</td>
+<td>浅拷贝数组</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>array.push()</code></td>
+<td>数组末尾添加数组元素</td>
+<td style="text-align:center">会</td>
+<td>返回数组新长度</td>
+<td>末尾添加一个或多个元素</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>array.unshift()</code></td>
+<td>数组开头添加数组元素</td>
+<td style="text-align:center">会</td>
+<td>返回数组新长度</td>
+<td>开头添加一个或多个元素</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>array.pop()</code></td>
+<td>删除数组最后一个元素</td>
+<td style="text-align:center">会</td>
+<td>返回被删除的元素</td>
+<td>末尾删除一个元素</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>array.shift()</code></td>
+<td>删除数组第一个元素</td>
+<td style="text-align:center">会</td>
+<td>返回被删除的元素</td>
+<td>开头删除一个元素</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>array.from()</code></td>
+<td>一个类似数组或可迭代对象创建一个新的，浅拷贝的数组实例</td>
+<td style="text-align:center">不会</td>
+<td>返回操作后的新数组</td>
+<td>数组去重（Set）,用值填充数组，复制数组，</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>array.forEach()</code></td>
+<td>对数组的每个元素执行一次提供的函数。</td>
+<td style="text-align:center"><code>forEach</code> 不会直接改变调用它的对象，但是对象可能会被 <code>callback</code> 函数改变</td>
+<td>undefined</td>
+<td>对每个元素进行操作，浅拷贝数组，数组去重</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>array.filter(function(currentValue,index,arr), thisValue)</code></td>
+<td>检查指定数组中符合条件的所有元素</td>
+<td style="text-align:center">不会</td>
+<td>符合条件的新数组</td>
+</tr>
+</tbody>
+</table>
+<p>持续更新中……</p>
 
       
     </div>
@@ -356,8 +445,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/07/10/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2022/05/23/vue2/" rel="next" title="vue2">
+                <i class="fa fa-chevron-left"></i> vue2
               </a>
             
           </div>
@@ -366,8 +455,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/07/17/Linux-yum-命令/" rel="prev" title="linux yum 命令">
-                linux yum 命令 <i class="fa fa-chevron-right"></i>
+              <a href="/2022/05/26/刷题/" rel="prev" title="刷题">
+                刷题 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -415,8 +504,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -469,6 +567,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#JS常用数组方法总结"><span class="nav-number">1.</span> <span class="nav-text">JS常用数组方法总结</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

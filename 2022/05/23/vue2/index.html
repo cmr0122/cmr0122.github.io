@@ -329,7 +329,7 @@
 <p>2.root容器中的代码依然符合html规范，只不过混入了一些特殊的Vue语法</p>
 <p>3.root容器里的代码被称为Vue模板</p>
 <p>4.Vue实例和容器是一一对应的</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">    <span class="comment">&lt;!-- 准备一个容器 --&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"root"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">h1</span>&gt;</span>hello,&#123;&#123;name&#125;&#125;<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line">    // 阻止vue在启动时产生生产提示</div><div class="line">    Vue.config.productionTip=false</div><div class="line">    const x = new Vue(&#123;</div><div class="line">        //  el用于指定当前vue实例为哪个容器服务，值通常为css选择器字符串</div><div class="line">        el:'#root',</div><div class="line">        // data用来存储数据，数据供el所指定容器使用</div><div class="line">        data:&#123;</div><div class="line">            name:'美女'</div><div class="line">        &#125;</div><div class="line">    &#125;)</div><div class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">    <span class="comment">&lt;!-- 准备一个容器 --&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"root"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">h1</span>&gt;</span>hello,&#123;&#123;name&#125;&#125;<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></div><div class="line">    <span class="comment">// 阻止vue在启动时产生生产提示</span></div><div class="line">    Vue.config.productionTip=<span class="literal">false</span></div><div class="line">    <span class="keyword">const</span> x = <span class="keyword">new</span> Vue(&#123;</div><div class="line">        <span class="comment">//  el用于指定当前vue实例为哪个容器服务，值通常为css选择器字符串</span></div><div class="line">        el:<span class="string">'#root'</span>,</div><div class="line">        <span class="comment">// data用来存储数据，数据供el所指定容器使用</span></div><div class="line">        data:&#123;</div><div class="line">            <span class="attr">name</span>:<span class="string">'美女'</span></div><div class="line">        &#125;</div><div class="line">    &#125;)</div><div class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
 <h2 id="vue模板语法"><a href="#vue模板语法" class="headerlink" title="vue模板语法"></a>vue模板语法</h2><h2 id="插值语法"><a href="#插值语法" class="headerlink" title="插值语法"></a>插值语法</h2><ul>
 <li>功能：用于解析标签体内容</li>
 <li>写法：<code></code>,xxx是js表达式，</li>
@@ -662,6 +662,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2022/05/26/JS常用数组方法总结/" rel="prev" title="JS常用数组方法总结">
+                JS常用数组方法总结 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -732,7 +736,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-count">15</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
